@@ -1,0 +1,8 @@
+{
+  "project": "restoration-blind-review",
+  "case_states": ["collecting_disclosures", "review_open", "questions_open", "voting", "sealed", "unblinded"],
+  "roles": ["secretary", "proposal_author", "reviewer", "conservation_scientist", "committee_chair"],
+  "conflict_states": ["undeclared", "clear", "recused", "pending_decision"],
+  "opinion_states": ["draft", "submitted", "withdrawn", "excluded", "late_note"],
+  "required_vote_fields": ["vote_id", "case_id", "proposal_version", "reviewer_alias", "choice", "cast_at"]
+}
