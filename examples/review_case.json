@@ -1,0 +1,14 @@
+{
+  "case_id": "case-2026-31",
+  "state": "voting",
+  "proposal_version": 4,
+  "sensitivity": "restricted",
+  "reviewers": [
+    {"alias":"reviewer-a","conflict_state":"clear"},
+    {"alias":"reviewer-b","conflict_state":"recused"},
+    {"alias":"reviewer-c","conflict_state":"clear"}
+  ],
+  "votes": [
+    {"vote_id":"vote-1","case_id":"case-2026-31","proposal_version":4,"reviewer_alias":"reviewer-a","choice":"approve_with_conditions","cast_at":"2026-09-15T16:40:00+08:00"}
+  ]
+}
