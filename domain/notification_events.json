@@ -1,0 +1,11 @@
+{
+  "description": "通知事件示例：仅携带案件引用与角色别名，任何重试都不得出现真实身份字段。",
+  "examples": [
+    {"event": "disclosure_reminder", "case_ref": "case-2026-31", "alias": "reviewer-c", "retry": 0, "window": {"closes_at": "2026-09-06T09:00:00+08:00"}},
+    {"event": "review_reminder", "case_ref": "case-2026-31", "alias": "reviewer-b", "retry": 1, "window": {"closes_at": "2026-09-11T09:00:00+08:00"}},
+    {"event": "question_routed", "case_ref": "case-2026-31", "alias": "author", "inquiry_id": "inquiry-1"},
+    {"event": "response_routed", "case_ref": "case-2026-31", "alias": "reviewer-a", "inquiry_id": "inquiry-1"},
+    {"event": "voting_reminder", "case_ref": "case-2026-31", "alias": "reviewer-c", "retry": 2, "window": {"closes_at": "2026-09-19T09:00:00+08:00"}},
+    {"event": "resolution_published", "case_ref": "case-2026-31", "alias": "committee", "resolution_hash": "示例值，运行时由引擎计算"}
+  ]
+}

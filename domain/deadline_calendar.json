@@ -1,0 +1,14 @@
+{
+  "defaults": {"disclosure_days": 7, "review_days": 14, "questions_days": 7, "voting_days": 5},
+  "cases": {
+    "case-2026-31": {
+      "opened_at": "2026-09-01T09:00:00+08:00",
+      "windows": {
+        "disclosure": {"opens_at": "2026-09-01T09:00:00+08:00", "closes_at": "2026-09-06T09:00:00+08:00"},
+        "review": {"opens_at": "2026-09-06T09:00:00+08:00", "closes_at": "2026-09-11T09:00:00+08:00"},
+        "questions": {"opens_at": "2026-09-11T09:00:00+08:00", "closes_at": "2026-09-14T09:00:00+08:00"},
+        "voting": {"opens_at": "2026-09-14T09:00:00+08:00", "closes_at": "2026-09-19T09:00:00+08:00"}
+      }
+    }
+  }
+}

@@ -4,5 +4,23 @@
   "roles": ["secretary", "proposal_author", "reviewer", "conservation_scientist", "committee_chair"],
   "conflict_states": ["undeclared", "clear", "recused", "pending_decision"],
   "opinion_states": ["draft", "submitted", "withdrawn", "excluded", "late_note"],
-  "required_vote_fields": ["vote_id", "case_id", "proposal_version", "reviewer_alias", "choice", "cast_at"]
+  "required_vote_fields": ["vote_id", "case_id", "proposal_version", "reviewer_alias", "choice", "cast_at"],
+  "sensitivity_levels": ["internal", "restricted"],
+  "vote_choices": ["approve", "approve_with_conditions", "reject"],
+  "opinion_stances": ["support", "conditional", "object"],
+  "windows": ["disclosure", "review", "questions", "voting"],
+  "quorum": {"numerator": 2, "denominator": 3, "minimum": 2},
+  "unblind": {"requires": ["quorum_met", "secretary_authorization"], "reversible": false},
+  "notification_events": ["disclosure_reminder", "review_reminder", "question_routed", "response_routed", "voting_reminder", "resolution_published"],
+  "identity_forbidden_fields": ["real_name", "name", "email", "phone", "institution", "identity"],
+  "identity_disclosure": {
+    "internal": {
+      "before_unblind": ["secretary", "committee_chair"],
+      "after_unblind": ["secretary", "committee_chair", "reviewer", "conservation_scientist", "proposal_author"]
+    },
+    "restricted": {
+      "before_unblind": ["secretary"],
+      "after_unblind": ["secretary", "committee_chair"]
+    }
+  }
 }
