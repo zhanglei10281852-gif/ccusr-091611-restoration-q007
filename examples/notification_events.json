@@ -1,0 +1,29 @@
+[
+  {
+    "event_id": "case-2026-31:review_reminder:reviewer-c",
+    "event_type": "review_reminder",
+    "case_ref": "case-2026-31",
+    "recipient_alias": "reviewer-c",
+    "attempt": 1,
+    "scheduled_for": "2026-09-10T09:00:00+08:00",
+    "body_template": "review_deadline_approaching"
+  },
+  {
+    "event_id": "case-2026-31:review_reminder:reviewer-c",
+    "event_type": "review_reminder",
+    "case_ref": "case-2026-31",
+    "recipient_alias": "reviewer-c",
+    "attempt": 2,
+    "scheduled_for": "2026-09-11T09:00:00+08:00",
+    "body_template": "review_deadline_approaching"
+  },
+  {
+    "event_id": "case-2026-31:voting_opened:reviewer-a",
+    "event_type": "voting_opened",
+    "case_ref": "case-2026-31",
+    "recipient_alias": "reviewer-a",
+    "attempt": 1,
+    "scheduled_for": "2026-09-15T09:00:00+08:00",
+    "body_template": "voting_window_open"
+  }
+]

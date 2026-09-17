@@ -2,7 +2,32 @@
   "project": "restoration-blind-review",
   "case_states": ["collecting_disclosures", "review_open", "questions_open", "voting", "sealed", "unblinded"],
   "roles": ["secretary", "proposal_author", "reviewer", "conservation_scientist", "committee_chair"],
-  "conflict_states": ["undeclared", "clear", "recused", "pending_decision"],
+  "conflict_states": ["undeclared", "clear", "pending_decision", "recused"],
   "opinion_states": ["draft", "submitted", "withdrawn", "excluded", "late_note"],
-  "required_vote_fields": ["vote_id", "case_id", "proposal_version", "reviewer_alias", "choice", "cast_at"]
+  "required_vote_fields": ["vote_id", "case_id", "proposal_version", "reviewer_alias", "choice", "cast_at"],
+  "sensitivity_levels": ["standard", "restricted", "maximum"],
+  "vote_choices": ["approve", "approve_with_conditions", "reject", "abstain"],
+  "phase_windows": ["disclosure", "review", "questions", "voting"],
+  "quorum_default": 3,
+  "notification_events": [
+    "review_window_opened",
+    "review_reminder",
+    "questions_reminder",
+    "voting_opened",
+    "voting_reminder",
+    "recusal_notice",
+    "late_note_recorded",
+    "case_sealed",
+    "case_unblinded",
+    "resolution_published"
+  ],
+  "notification_payload_allowed_keys": [
+    "event_id",
+    "event_type",
+    "case_ref",
+    "recipient_alias",
+    "attempt",
+    "scheduled_for",
+    "body_template"
+  ]
 }
